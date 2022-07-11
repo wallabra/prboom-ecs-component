@@ -1,0 +1,37 @@
+= PRBoom+ Entity-Component-System Rust thinker and mobj implementation
+Gustavo Ramos Rehermann <rehermann6046@gmail.com>
+0.1.0, 2022-07-11
+:description: An ECS-based implementation of Doom's thinker and map object, tailored for PRBoom+.
+:keywords: doom, rust, prboom, prboom+, prboom-plus, prboom plus, thinker, mobj, map object, thing, rewrite, ecs, entity-component-system
+:url-repo: https://github.com/wallabra/prboom-ecs-component
+:sectnums:
+:toc:
+
+== Summary
+
+This project reimplements the Doom game objects as Entity-Component-System
+entities and reworks DoomEdNums to refer to a list of entity "templates".
+It uses the Rust programming language to achieve this in an efficient, but
+flexible and reasonable, manner.
+
+This implementation is tailored to PRBoom{plus}, and requires a fork/branch of
+the PRBoom{plus} UMAPINFO fork. It serves as an experiment; do not expect the
+result to be seamlessly playable, let alone demo compatible!
+
+== Roadmap
+
+* [x] Write wrapper header to use PRBoom+ code from Rust.
+* [x] Setup bindgen.
+* [ ] Setup PRBoom+ build system for linking the component's static library.
+* Write systems that interface with PRBoom+ components:
+    * [ ] Position and velocity.
+    * [ ] Collision and thing interaction.
+    * [ ] Health and armour.
+    * [ ] Rendering.
+    * [ ] Audio.
+    * [ ] Projectiles and general entity spawning.
+* Set up unit testing.
+    * [ ] Setup a test environment to be used when testing a System.
+    * [ ] Write unit tests for each system, preferably more than one per system.
+* [ ] Write entity templates based on DoomEdNums.
+* [ ] Rewrite core PRBoom+ functions to use our new component.
