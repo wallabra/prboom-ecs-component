@@ -24,14 +24,14 @@ result to be seamlessly playable, let alone demo compatible!
 * [x] Setup bindgen.
 * [ ] Setup PRBoom+ build system for linking the component's static library.
 * Write systems that interface with PRBoom+ components:
-    * [ ] Position and velocity.
-    * [ ] Collision and thing interaction.
-    * [ ] Health and armour.
-    * [ ] Rendering.
-    * [ ] Audio.
-    * [ ] Projectiles and general entity spawning.
+* * [ ] Position and velocity.
+* * [ ] Collision and thing interaction.
+* *  [ ] Health and armour.
+* * [ ] Rendering.
+* * [ ] Audio.
+* * [ ] Projectiles and general entity spawning.
 * Set up unit testing.
-    * [ ] Setup a test environment to be used when testing a System.
-    * [ ] Write unit tests for each system, preferably more than one per system.
+* * [ ] Setup a test environment to be used when testing a System.
+* * [ ] Write unit tests for each system, preferably more than one per system.
 * [ ] Write entity templates based on DoomEdNums.
 * [ ] Rewrite core PRBoom+ functions to use our new component.
